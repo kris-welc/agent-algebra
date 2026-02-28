@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: agent-algebra
+Version: 0.1.0
+Summary: Mathematical composition primitives for AI agent ensembles
+License-Expression: MIT
+Keywords: agents,composition,ensemble,calibration,scoring
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: numpy
+Requires-Dist: numpy>=1.24; extra == "numpy"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0; extra == "dev"
+Dynamic: license-file

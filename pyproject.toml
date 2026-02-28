@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-algebra"
+version = "0.1.0"
+description = "Mathematical composition primitives for AI agent ensembles"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+keywords = ["agents", "composition", "ensemble", "calibration", "scoring"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+numpy = ["numpy>=1.24"]
+dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+
+[tool.setuptools.packages.find]
+include = ["agent_algebra*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
